@@ -39,13 +39,13 @@ terraform apply
 
 _A continuación se explica la ubicación del código por cada punto solicitado_
 
-* [Punto1](https://github.com/jimmymoto/appgate/appgate-vpc-jaime-martinez.tf) - Creación VPC
-* [Punto2](https://github.com/jimmymoto/appgate/appgate-instance-jaime-martinez.tf) - Creación instancia, creación volumen y adición volumen --Línea 59-111--.
-* [Punto3](https://github.com/jimmymoto/appgate/appgate-instance-jaime-martinez.tf) - Despliegue instancia y ejecución script Apache web por docker --Línea 77-111--.
-* [Punto3.1](https://github.com/jimmymoto/appgate/utils/docker-compose.yml) - Archivo con imagen docker para despliegue
-* [Punto4](https://github.com/jimmymoto/appgate/scripts/tf-appgate-instance-web-script.sh) - Script despliegue Apache web server por docker
-* [Punto5](https://github.com/jimmymoto/appgate/appgate-instance-jaime-martinez.tf) - Creación segunda instancia para load balancer --Línea 33-57--.
-* [Punto6](https://github.com/jimmymoto/appgate/appgate-instance-jaime-martinez.tf) - Copia script y ejecución --Línea 45-54--.
-* [Punto6a](https://github.com/jimmymoto/appgate/scripts/tf-appgate-balanceador-script.sh) - Script despliegue balanceador
-* [Punto6b](https://github.com/jimmymoto/appgate/utils/docker-compose.yml) - Archivo que carga unicamente el puerto 80 por el cual es publicado a la imagen de docker.
-* [Punto6c](https://github.com/jimmymoto/appgate/html) - Directorio de archivos del servidor web apache, donde se encuentra solucionado este punto.
+* [Punto1](https://github.com/jimmymoto/appgate/blob/master/appgate-vpc-jaime-martinez.tf) - Creación VPC
+* [Punto2](https://github.com/jimmymoto/appgate/blob/master/appgate-instance-jaime-martinez.tf) - Creación instancia, creación volumen y adición volumen --Línea 59-111--.
+* [Punto3](https://github.com/jimmymoto/appgate/blob/master/appgate-instance-jaime-martinez.tf) - Despliegue instancia y ejecución script Apache web por docker --Línea 77-111--.
+* [Punto3.1](https://github.com/jimmymoto/appgate/blob/master/utils/docker-compose.yml) - Archivo con imagen docker para despliegue
+* [Punto4](https://github.com/jimmymoto/appgate/blob/master/scripts/tf-appgate-instance-web-script.sh) - Script despliegue Apache web server por docker
+* [Punto5](https://github.com/jimmymoto/appgate/blob/master/appgate-instance-jaime-martinez.tf) - Creación segunda instancia para load balancer --Línea 33-57--.
+* [Punto6](https://github.com/jimmymoto/appgate/blob/master/appgate-instance-jaime-martinez.tf) - Copia script y ejecución --Línea 45-54--.
+* [Punto6a](https://github.com/jimmymoto/appgate/blob/master/scripts/tf-appgate-balanceador-script.sh) - Script despliegue balanceador
+* [Punto6b](https://github.com/jimmymoto/appgate/blob/master/utils/docker-compose.yml) - Archivo que carga unicamente el puerto 80 por el cual es publicado a la imagen de docker.
+* [Punto6c](https://github.com/jimmymoto/appgate/tree/master/html) - Directorio de archivos del servidor web apache, donde se encuentra solucionado este punto.
