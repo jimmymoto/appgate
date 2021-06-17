@@ -1,0 +1,11 @@
+version: "2"
+services:
+  web:
+    image: piuma/centos7-apache-php
+    container_name: web
+    volumes:
+      - /home/centos/html/:/var/www/html
+    environment:
+      LANG: it_IT.UTF-8
+    ports:
+      - "80:80"
